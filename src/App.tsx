@@ -30,7 +30,6 @@ export const App = () => {
       setReversed(prev => !prev);
     } else {
       setSortField(type);
-      setReversed(false);
     }
   };
 
