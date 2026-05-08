@@ -30,7 +30,7 @@ export const App = () => {
       setReversed(prev => !prev);
     } else {
       setSortField(type);
-      setReversed(false);
+      // setReversed(false);
     }
   };
 
@@ -55,7 +55,7 @@ export const App = () => {
 
   const needReset = sortField !== SortType.Default || reversed;
 
-  const reset = () => {
+  const handleReset = () => {
     setSortField(SortType.Default);
     setReversed(false);
   };
@@ -90,7 +90,7 @@ export const App = () => {
           <button
             type="button"
             className="button is-danger is-light"
-            onClick={reset}
+            onClick={handleReset}
           >
             Reset
           </button>
